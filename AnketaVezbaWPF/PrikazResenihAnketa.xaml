@@ -1,0 +1,16 @@
+﻿<Window x:Class="AnketaVezbaWPF.PrikazResenihAnketa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnketaVezbaWPF"
+        mc:Ignorable="d"
+        Title="PrikazResenihAnketa" Height="493.985" Width="437.594">
+    <Grid>
+        <Label x:Name="lblIdAnkete" Content="ID: " HorizontalAlignment="Left" Margin="24,24,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbReseneAnketeOsobe" HorizontalAlignment="Left" Margin="100,24,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbReseneAnketeOsobe_SelectionChanged"/>
+        <Label x:Name="lblNazivReseneAnkete" Content="Naziv resene ankete " HorizontalAlignment="Left" Margin="238,24,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbPrikazOdgovora" HorizontalAlignment="Left" Height="354" Margin="24,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="382"/>
+
+    </Grid>
+</Window>

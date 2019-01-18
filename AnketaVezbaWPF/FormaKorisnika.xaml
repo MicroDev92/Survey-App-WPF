@@ -1,0 +1,20 @@
+﻿<Window x:Class="AnketaVezbaWPF.FormaKorisnika"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnketaVezbaWPF"
+        mc:Ignorable="d"
+        Title="FormaKorisnika" Height="462.623" Width="725.377">
+    <Grid>
+        <Label x:Name="lblIzaberiAnketu" Content="Izaberite anketu:" HorizontalAlignment="Left" Margin="16,30,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbAnkete" HorizontalAlignment="Left" Margin="134,30,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbAnkete_SelectionChanged"/>
+        <Label x:Name="lblNaslovAnkete" Content="Naslov ankete" HorizontalAlignment="Left" Margin="293,26,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgPitanjaAnkete" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Height="272" Width="341" SelectionChanged="dgPitanjaAnkete_SelectionChanged"/>
+        <DataGrid x:Name="dgOdgovoriPitanja" HorizontalAlignment="Left" Margin="377,102,0,0" VerticalAlignment="Top" Height="272" Width="310"/>
+        <Button x:Name="btnPotvrdiOdgovor" Content="Potvrdi odgovor" HorizontalAlignment="Left" Margin="377,391,0,0" VerticalAlignment="Top" Width="111" Click="btnPotvrdiOdgovor_Click"/>
+        <Button x:Name="btnZavrsiAnketu" Content="Zavrsi anketu" HorizontalAlignment="Left" Margin="570,391,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.187,0.182" Click="btnUpisAnkete_Click"/>
+        <Button x:Name="btnPrikaziReseneAnkete" Content="Prikazi resene ankete" HorizontalAlignment="Left" Margin="488,30,0,0" VerticalAlignment="Top" Width="148" Click="btnPrikaziReseneAnkete_Click"/>
+
+    </Grid>
+</Window>

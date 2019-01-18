@@ -1,0 +1,18 @@
+﻿<Window x:Class="AnketaVezbaWPF.FormaAdministratora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnketaVezbaWPF"
+        mc:Ignorable="d"
+        Title="Administracija" Height="396.154" Width="693.779" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Height="253" Width="654"/>
+        <RadioButton x:Name="radioButtonAnkete" Content="Ankete" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top" Checked="radioButtonAnkete_Checked"/>
+        <RadioButton x:Name="radioButtonKorisnici" Content="Korisnici" HorizontalAlignment="Left" Margin="34,45,0,0" VerticalAlignment="Top" Checked="radioButtonKorisnici_Checked"/>
+        <Button x:Name="UpisBtn" Content="Upis" HorizontalAlignment="Left" Margin="168,29,0,0" VerticalAlignment="Top" Width="75" Click="UpisBtn_Click"/>
+        <Button x:Name="IzmenaBtn" Content="Izmena" HorizontalAlignment="Left" Margin="284,29,0,0" VerticalAlignment="Top" Width="75" Click="IzmenaBtn_Click"/>
+        <Button x:Name="BrisanjeBtn" Content="Brisanje" HorizontalAlignment="Left" Margin="402,29,0,0" VerticalAlignment="Top" Width="75" Click="BrisanjeBtn_Click"/>
+
+    </Grid>
+</Window>
